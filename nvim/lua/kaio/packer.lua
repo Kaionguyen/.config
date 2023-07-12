@@ -12,13 +12,13 @@ return require('packer').startup(function(use)
 	  -- or                            , branch = '0.1.x',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
+
   --Color Scheme
-  use ({
-	  "folke/tokyonight.nvim",
-	  as = 'tokyonight', 
-	  config = function()
-		  vim.cmd('colorscheme tokyonight')
-	  end
+  use ({'dylanaraps/wal.vim',
+  as = 'wal',
+  config = function ()
+      vim.cmd('colorscheme wal')
+  end
   })
 
   --Functionality

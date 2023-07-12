@@ -24,6 +24,10 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 --buffer control
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
+--Yank to clipboard vs buffer
+vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
 --replace all instances of word on cursor
 vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })

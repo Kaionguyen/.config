@@ -13,13 +13,23 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  --Color Scheme
-  use ({'dylanaraps/wal.vim',
-  as = 'wal',
-  config = function ()
-      vim.cmd('colorscheme wal')
-  end
-  })
+  --Pywal
+  --use ({'dylanaraps/wal.vim',
+  --as = 'wal',
+  --config = function ()
+      --vim.cmd('colorscheme wal')
+  --end
+  --})
+
+  --CATPUCCIN!
+  --use { "catppuccin/nvim",
+  ----as = "catppuccin",
+  ----config = function ()
+      ----vim.cmd('colorscheme catppuccin')
+  ----end
+  --}
+
+  use("neanias/everforest-nvim")
 
   --Functionality
   use('theprimeagen/harpoon')
@@ -51,11 +61,6 @@ return require('packer').startup(function(use)
 		  {'L3MON4D3/LuaSnip'},
 		  {'rafamadriz/friendly-snippets'},
 	  }
-  }
-
-  use {
-      "windwp/nvim-autopairs",
-      config = function() require("nvim-autopairs").setup {} end
   }
 
 end)

@@ -39,9 +39,43 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
+
+lsp.format_on_save({
+  format_opts = {
+    async = false,
+    timeout_ms = 10000,
+  },
+  servers = {
+    ['null-ls'] = {'javascript', 'typescript', 'lua', 'c', 'cpp'},
+  }
+})
+
 lsp.setup()
 
 vim.diagnostic.config({
     virtual_text = true
 })
+
+local null_ls = require('null-ls')
+
+null_ls.setup({
+  sources = {
+    -- Here you can add tools not supported by mason.nvim
+    -- make sure the source name is supported by null-ls
+    -- https://github.com/jose-elias-alvarez/null-ls.nvim/blob/main/doc/BUILTINS.md
+  }
+})
+
+require('mason-null-ls').setup({
+  ensure_installed = nil,
+  automatic_installation = false, -- You can still set this to `true`
+  handlers = {
+      -- Here you can add functions to register sources.
+      -- See https://github.com/jay-babu/mason-null-ls.nvim#handlers-usage
+      --
+      -- If left empty, mason-null-ls will  use a "default handler"
+      -- to register all sources
+  }
+})
+
 

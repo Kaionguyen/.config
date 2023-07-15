@@ -42,3 +42,21 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 --ThePrimagen told me to
 vim.keymap.set("n", "Q", "<nop>")
+
+--HTML5 boiler plate
+vim.keymap.set("n", "<leader>html5", [[<Esc>:set paste<CR>i<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My HTML5 Boilerplate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+    </body>
+</html><Esc>:set nopaste<CR>
+]])
+
+

@@ -22,14 +22,11 @@ return require('packer').startup(function(use)
   --})
 
   --CATPUCCIN!
-  --use { "catppuccin/nvim",
-  ----as = "catppuccin",
-  ----config = function ()
-      ----vim.cmd('colorscheme catppuccin')
-  ----end
-  --}
+  use { "catppuccin/nvim"}
 
-  use("neanias/everforest-nvim")
+  -- use("neanias/everforest-nvim")
+
+  -- use('folke/tokyonight.nvim')
 
   --Functionality
   use('theprimeagen/harpoon')
@@ -63,6 +60,13 @@ return require('packer').startup(function(use)
 	  }
   }
 
+
+  use {
+      'numToStr/Comment.nvim',
+      config = function()
+          require('Comment').setup()
+      end
+  }
   use('nvim-treesitter/nvim-treesitter-context')
   use('jose-elias-alvarez/null-ls.nvim')
   use('jay-babu/mason-null-ls.nvim')

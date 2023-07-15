@@ -1,13 +1,18 @@
 vim.g.mapleader = " "
 
 --return to netrw
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>nw", vim.cmd.Ex)
 
 --Window/tab control
 vim.keymap.set("n", "<leader>wv", "<C-w>v") -- window vertical 
 vim.keymap.set("n", "<leader>wh", "<C-w>s") -- window horizontal 
+vim.keymap.set("n", "<leader>wu", "<C-w>k") -- window up 
+vim.keymap.set("n", "<leader>wd", "<C-w>j") -- window down 
+vim.keymap.set("n", "<leader>wl", "<C-w>h") -- window left 
+vim.keymap.set("n", "<leader>wr", "<C-w>l") -- window right 
 vim.keymap.set("n", "<leader>we", "<C-w>=") -- window equal width
 vim.keymap.set("n", "<leader>wx", ":close<CR>") -- window exit
+
 
 vim.keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
 vim.keymap.set("n", "<leader>tx", ":tabclose<CR>") -- exit tab
@@ -28,11 +33,11 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
---buffer control
+--register control
 vim.keymap.set("x", "<leader>p", "\"_dP")
 vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
 
---Yank to clipboard vs buffer
+--Yank to clipboard vs register
 vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
@@ -58,5 +63,6 @@ vim.keymap.set("n", "<leader>html5", [[<Esc>:set paste<CR>i<!DOCTYPE html>
     </body>
 </html><Esc>:set nopaste<CR>
 ]])
+
 
 

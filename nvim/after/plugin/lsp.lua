@@ -46,7 +46,7 @@ lsp.format_on_save({
     timeout_ms = 10000,
   },
   servers = {
-    ['null-ls'] = {'javascript', 'typescript', 'lua', 'c', 'cpp', 'html'},
+    ['null-ls'] = {'javascript', 'lua', 'c', 'cpp'},
   }
 })
 
@@ -68,7 +68,7 @@ null_ls.setup({
 
 require('mason-null-ls').setup({
   ensure_installed = nil,
-  automatic_installation = false, -- You can still set this to `true`
+  automatic_installation = true, -- You can still set this to `true`
   handlers = {
       -- Here you can add functions to register sources.
       -- See https://github.com/jay-babu/mason-null-ls.nvim#handlers-usage

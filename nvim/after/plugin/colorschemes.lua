@@ -5,8 +5,8 @@ require('catppuccin').setup({
         dark = "mocha",
     },
     transparent_background = true, -- disables setting the background color.
-    show_end_of_buffer = true, -- shows the '~' characters after the end of buffers
-    term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+    show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+    term_colors = true, -- sets terminal colors (e.g. `g:terminal_color_0`)
     dim_inactive = {
         enabled = false, -- dims the background color of inactive window
         shade = "dark",
@@ -31,14 +31,14 @@ require('catppuccin').setup({
     },
     color_overrides = {},
     custom_highlights = {},
+
     integrations = {
         cmp = true,
-        gitsigns = true,
         nvimtree = true,
         treesitter = true,
-        notify = false,
-        mini = false,
-        -- harpoon = true,
+        harpoon = true,
+        treesitter_context = true,
+        mason = true,
         -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
     },
 })

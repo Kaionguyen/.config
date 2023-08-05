@@ -39,14 +39,14 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("i", "<C-h>", function() vim.lsp.buf.signature_help() end, opts)
 end)
 
-
-lsp.format_on_save({
-  format_opts = {
+lsp.format_mapping("gq", {
+    format_opts = {
     async = false,
     timeout_ms = 10000,
   },
   servers = {
-    ['null-ls'] = {'javascript', 'lua', 'c', 'cpp'},
+    ['null-ls'] = {'javascript', 'lua', 'c', 'cpp', 'python', 'html', 'css',
+                    'typescript'},
   }
 })
 

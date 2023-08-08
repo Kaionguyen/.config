@@ -30,7 +30,11 @@ require('catppuccin').setup({
         operators = {},
     },
     color_overrides = {},
-    custom_highlights = {},
+    custom_highlights = function (colors)
+        return {
+            LineNr = { fg = colors.overlay2 },
+        }
+    end,
 
     integrations = {
         cmp = true,

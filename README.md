@@ -17,5 +17,6 @@ Configuration I use for MacOS.
 </details>
 
 Preview:
-![Alt Text](~/Screenshots/setup.png)
+![image](https://github.com/Kaionguyen/.config/assets/107159508/bc506153-997a-46c1-8c2b-9ed657e39c3e)
+
 

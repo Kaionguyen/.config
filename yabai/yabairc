@@ -41,5 +41,7 @@ yabai -m config external_bar               all:39:0     \
                 window_gap                 8
 
 #disabled apps
-yabai -m rule --add app="^(Library|Calendar|Photos|Notes|Calculator|Software Update|System Preferences|System Settings|Finder)$" manage=off
+yabai -m rule --add app="^(Library|Calendar|Photos|Software Update|App Store|Activity Monitor|Notes|Calculator|Software Update|System Preferences|System Settings)$" manage=off
+yabai -m rule --add label="Finder" app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+yabai -m rule --add label="About This Mac" app="System Information" title="About This Mac" manage=off
 

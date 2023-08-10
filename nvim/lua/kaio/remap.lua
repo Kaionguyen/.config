@@ -4,7 +4,6 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 
 --return to netrw
 vim.keymap.set("n", "<leader>nw", vim.cmd.Ex)
-vim.keymap.set("n", "<C-i>", "<C-a>")
 
 --Window/tab control
 vim.keymap.set("n", "<leader>wv", "<C-w>v") -- window vertical 

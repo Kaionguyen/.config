@@ -5,22 +5,6 @@ vim.keymap.set("i", "<C-c>", "<Esc>")
 --return to netrw
 vim.keymap.set("n", "<leader>nw", vim.cmd.Ex)
 
---Window/tab control
-vim.keymap.set("n", "<leader>wv", "<C-w>v") -- window vertical 
-vim.keymap.set("n", "<leader>wh", "<C-w>s") -- window horizontal 
-vim.keymap.set("n", "<leader>wu", "<C-w>k") -- window up 
-vim.keymap.set("n", "<leader>wd", "<C-w>j") -- window down 
-vim.keymap.set("n", "<leader>wl", "<C-w>h") -- window left 
-vim.keymap.set("n", "<leader>wr", "<C-w>l") -- window right 
-vim.keymap.set("n", "<leader>we", "<C-w>=") -- window equal width
-vim.keymap.set("n", "<leader>wx", ":close<CR>") -- window exit
-
-
-vim.keymap.set("n", "<leader>to", ":tabnew<CR>") -- open new tab
-vim.keymap.set("n", "<leader>tx", ":tabclose<CR>") -- exit tab
-vim.keymap.set("n", "<leader>tn", ":tabn<CR>") -- next tab
-vim.keymap.set("n", "<leader>tp", ":tabp<CR>") -- previous tab
-
 --clear search buffer
 vim.keymap.set("n", "<leader>nh", ":nohl<CR>")
 

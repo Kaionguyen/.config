@@ -12,7 +12,7 @@ Configuration I use for MacOS.
 - Bar: [sketchybar](https://github.com/FelixKratz/SketchyBar)
 - Window Manager: [yabai](https://github.com/koekeishiya/yabai) w/[skhd](https://github.com/koekeishiya/skhd) for keybinds
 - System Monitor: [btop](https://github.com/aristocratos/btop)
-- Colortheme for all: [Catppucin](https://github.com/catppuccin/catppuccin)
+- Colortheme for all: [Catppucin](https://github.com/catppuccin/catppuccin) (mocha)
 
 </details>
 

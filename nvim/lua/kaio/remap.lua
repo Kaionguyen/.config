@@ -35,6 +35,9 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 --ThePrimagen told me to
 vim.keymap.set("n", "Q", "<nop>")
 
+--Go to packer
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/kaio/packer.lua<CR>")
+
 --HTML5 boiler plate
 vim.keymap.set("n", "<leader>html5", [[<Esc>:set paste<CR>i<!DOCTYPE html>
 
@@ -50,6 +53,3 @@ vim.keymap.set("n", "<leader>html5", [[<Esc>:set paste<CR>i<!DOCTYPE html>
     </body>
 </html><Esc>:set nopaste<CR>
 ]])
-
-
-

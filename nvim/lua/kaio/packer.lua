@@ -13,18 +13,21 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
+  -- Icons
+  use {'nvim-tree/nvim-web-devicons'}
+
   --CATPUCCIN!
   use { "catppuccin/nvim"}
+
+  -- Dashboard
+  use {"nvimdev/dashboard-nvim"}
 
   --Functionality
   use('theprimeagen/harpoon')
   use('mbbill/undotree')
   use('tpope/vim-fugitive')
   use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
-  }
+  use {'nvim-lualine/lualine.nvim'}
   use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v1.x',

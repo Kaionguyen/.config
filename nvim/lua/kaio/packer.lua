@@ -13,20 +13,8 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  --Pywal
-  --use ({'dylanaraps/wal.vim',
-  --as = 'wal',
-  --config = function ()
-      --vim.cmd('colorscheme wal')
-  --end
-  --})
-
   --CATPUCCIN!
   use { "catppuccin/nvim"}
-
-  -- use("neanias/everforest-nvim")
-
-  -- use('folke/tokyonight.nvim')
 
   --Functionality
   use('theprimeagen/harpoon')

@@ -48,7 +48,7 @@ NEOVIM_ALIGATOR = [[
 ###    #### ########## ########      ###     ########### ###       ### 
 ]]
 
-NEOVIM = string.rep("\n", 5) .. NEOVIM .. "\n\n"
+NEOVIM = string.rep("\n", 8) .. NEOVIM .. "\n\n"
 VIM = string.rep("\n", 5) .. VIM .. "\n\n"
 MINIKASA = string.rep("\n", 5) .. MINIKASA .. "\n\n"
 NEOVIM_ALIGATOR = string.rep("\n", 5) .. NEOVIM_ALIGATOR .. "\n\n"
@@ -56,9 +56,10 @@ NEOVIM_ALIGATOR = string.rep("\n", 5) .. NEOVIM_ALIGATOR .. "\n\n"
 dashboard.setup({
     theme = "doom",
     config = {
-        header = vim.split(NEOVIM_ALIGATOR, "\n"),
+        header = vim.split(NEOVIM, "\n"),
         center = {
             { action = "Telescope find_files",                                     desc = " Find File",       icon = "", key = "f" },
+            { action = vim.cmd.Ex,                                                 desc = " File Explorer",   icon = "", key = "e" },
             { action = "ene | startinsert",                                        desc = " New File",        icon = "", key = "n" },
             { action = "Telescope live_grep",                                      desc = " Live Grep",       icon = "", key = "g" },
             { action = "qa",                                                       desc = " Quit",            icon = "", key = "q" },

@@ -17,7 +17,8 @@ return require('packer').startup(function(use)
   use {'nvim-tree/nvim-web-devicons'}
 
   --CATPUCCIN!
-  use { "catppuccin/nvim"}
+  use {'catppuccin/nvim'}
+  use {'AlexvZyl/nordic.nvim'}
 
   -- Dashboard
   use {"nvimdev/dashboard-nvim"}

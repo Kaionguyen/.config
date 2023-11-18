@@ -25,6 +25,8 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-vim.keymap.set("n", "<leader>c", function()
+-- vim.cmd("hi TreesitterContext guibg=#242933")
+
+vim.keymap.set("n", "<leader>jc", function()
   require("treesitter-context").go_to_context()
 end, { silent = true })

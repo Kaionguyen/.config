@@ -32,8 +32,11 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
---ThePrimagen told me to
+--ThePrimeagen told me to
 vim.keymap.set("n", "Q", "<nop>")
+
+-- tmux sessionizer
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.local/bin/tmux-sessionizer<CR>")
 
 --Go to packer
 vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/kaio/packer.lua<CR>")

@@ -17,6 +17,8 @@ vim.opt.backup = false
 vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
 vim.opt.undofile = true
 
+vim.g.netrw_banner = 0
+
 vim.opt.termguicolors = true
 vim.opt.signcolumn = "yes"
 

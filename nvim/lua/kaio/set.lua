@@ -30,4 +30,6 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
-vim.cmd("autocmd FileType html,css,jsx,tsx setlocal tabstop=2 softtabstop=2 shiftwidth=2")
+vim.cmd("autocmd FileType html,css,typescriptreact,javascriptreact setlocal tabstop=2")
+vim.cmd("autocmd FileType html,css,typescriptreact,javascriptreact setlocal softtabstop=2")
+vim.cmd("autocmd FileType html,css,typescriptreact,javascriptreact setlocal shiftwidth=2")

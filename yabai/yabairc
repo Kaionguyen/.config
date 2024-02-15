@@ -16,16 +16,10 @@ $HOME/.config/yabai/create_spaces.sh
 #binary split partition
 yabai -m config layout bsp
 
-yabai -m config external_bar               all:39:0     \
-                window_border              on           \
-                window_border_blur         off          \
+yabai -m config external_bar               all:37:0     \
                 mouse_follows_focus        on           \
                 focus_follows_mouse        on           \
                 window_placement           second_child \
-                window_border_width        4            \
-                window_border_radius       11           \
-                active_window_border_color 0xffe1e3e4   \
-                normal_window_border_color 0xff2a2f38   \
                 insert_feedback_color      0xff9dd274   \
                 split_ratio                0.50         \
                 auto_balance               off          \
@@ -33,8 +27,7 @@ yabai -m config external_bar               all:39:0     \
                 mouse_action1              move         \
                 mouse_action2              resize       \
                 mouse_drop_action          swap         \
-                                                        \
-                top_padding                20           \
+                top_padding                7            \
                 bottom_padding             10           \
                 left_padding               10           \
                 right_padding              10           \

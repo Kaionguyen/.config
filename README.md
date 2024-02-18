@@ -17,4 +17,4 @@ Configuration I use for MacOS.
 </details>
 
 Preview:
-![image](https://github.com/Kaionguyen/.config/assets/107159508/75e0d2a2-d174-479b-a8d0-aecafcb28402)
+<img width="1710" alt="Screenshot 2024-02-15 at 7 39 35 AM" src="https://github.com/Kaionguyen/.config/assets/107159508/c93d0fc5-258c-42ca-b096-57004f81d84a">

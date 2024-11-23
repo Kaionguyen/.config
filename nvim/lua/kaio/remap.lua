@@ -30,6 +30,8 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 
 --replace all instances of word on cursor
 vim.keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- Create executable
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
 --ThePrimeagen told me to
@@ -39,7 +41,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.local/bin/tmux-sessionizer<CR>")
 
 --Go to packer
-vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/kaio/packer.lua<CR>")
+vim.keymap.set("n", "<leader>vpp", "<cmd>e ~/.config/nvim/lua/kaio/lazy.lua<CR>")
 
 --HTML5 boiler plate
 vim.keymap.set("n", "<leader>html5", [[<Esc>:set paste<CR>i<!DOCTYPE html>

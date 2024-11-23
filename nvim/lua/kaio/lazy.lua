@@ -17,7 +17,7 @@ vim.g.mapleader = " "
 local plugins = {
     -- Telescope (fzf)
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.2',
+        'nvim-telescope/telescope.nvim', tag = '0.1.5',
         dependencies = { {'nvim-lua/plenary.nvim'} }
     },
 

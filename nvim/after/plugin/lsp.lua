@@ -53,7 +53,7 @@ lsp.format_mapping("gq", {
   },
   servers = {
     ['null-ls'] = {'javascript', 'lua', 'c', 'cpp', 'python', 'html', 'css',
-                    'typescript'},
+                    'typescript', 'java'},
   }
 })
 

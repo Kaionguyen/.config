@@ -1,0 +1,26 @@
+background = 191c23
+foreground = d9dde7
+
+background-opacity = 0.85
+
+macos-titlebar-style = hidden
+
+font-family = FiraCode Nerd Font Mono
+font-family-bold = FiraCode Nerd Font Mono Bold
+
+font-size = 18
+
+font-thicken=true
+
+# Disable ligatures
+font-feature = -calt
+font-feature = -liga
+font-feature = -dlig
+
+# cursor-style = block
+# cursor-style-blink = true
+
+# Remove quit prompt
+confirm-close-surface = false
+
+command = zsh --login -c "if command -v tmux >/dev/null 2>&1; then tmux attach || tmux new-session -s Home -c ~\; new-window -c ~\; send-keys "nvim" C-m; else zsh; fi"

@@ -17,15 +17,17 @@ vim.g.mapleader = " "
 local plugins = {
     -- Telescope (fzf)
     {
-        'nvim-telescope/telescope.nvim', tag = '0.1.5',
-        dependencies = { {'nvim-lua/plenary.nvim'} }
+        'nvim-telescope/telescope.nvim', tag = '0.1.8',
+        dependencies = {
+            { 'nvim-lua/plenary.nvim' },
+            { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
+        }
     },
 
     -- Icons
     {'nvim-tree/nvim-web-devicons'},
 
     -- Colorschemes
-    {'catppuccin/nvim'},
     {'AlexvZyl/nordic.nvim'},
 
     -- Dashboard

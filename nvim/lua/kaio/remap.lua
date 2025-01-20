@@ -37,6 +37,18 @@ vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 --ThePrimeagen told me to
 vim.keymap.set("n", "Q", "<nop>")
 
+-- Quickfix
+vim.keymap.set("n", "Q", function()
+  if vim.fn.empty(vim.fn.filter(vim.fn.getwininfo(), "v:val.quickfix")) == 1 then
+    vim.cmd("copen")
+  else
+    vim.cmd("cclose")
+  end
+end)
+
+vim.keymap.set("n", "<C-n>", "<cmd>cnext<CR>", { desc = "Next quickfix item" })
+vim.keymap.set("n", "<C-p>", "<cmd>cprev<CR>", { desc = "Prev quickfix item" })
+
 -- tmux sessionizer
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww ~/.local/bin/tmux-sessionizer<CR>")
 
